@@ -1,8 +1,8 @@
-<h1>This is the films MAIN page</h1>
+<h1>This is the accident MAIN page</h1>
 <br>
-<h4>Films saved in our database:</h4>
+<h4>accidents saved in our database:</h4>
 <ul>
-{% for accident in ACCIDENT %}
+{% for accident in accident %}
   
   <li>{{accident.ACCIDENT_NO}} ({{accident.ACCIDENT_DATE}}, day: "{{accident.DAY_WEEK_DESC}}")</li>
 {% endfor %}

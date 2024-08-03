@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from onboardingapp.views import accident_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('onboardingapp.urls'))
+    path('',include('onboardingapp.urls')),
+    path('accidents/', accident_list, name='accident-list'),
 ]
